@@ -166,7 +166,7 @@ class ClientRepository
     /**
      * Store a new personal access token client.
      *
-     * @param  int  $userId
+     * @param  int|null  $userId
      * @param  string  $name
      * @param  string  $redirect
      * @param  string|null  $provider
@@ -176,7 +176,7 @@ class ClientRepository
     {
         return tap($this->create($userId, $name, $redirect, $provider, true), function ($client) {
             $accessClient = Passport::personalAccessClient();
-            $accessClient->client_id = $client->id;
+            $accessClient->client_id = $client->getKey();
             $accessClient->save();
         });
     }
@@ -184,7 +184,7 @@ class ClientRepository
     /**
      * Store a new password grant client.
      *
-     * @param  int  $userId
+     * @param  int|null  $userId
      * @param  string  $name
      * @param  string  $redirect
      * @param  string|null  $provider

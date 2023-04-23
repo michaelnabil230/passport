@@ -1,6 +1,77 @@
 # Release Notes
 
-## [Unreleased](https://github.com/laravel/passport/compare/v11.3.1...11.x)
+## [Unreleased](https://github.com/laravel/passport/compare/v11.8.5...11.x)
+
+## [v11.8.5](https://github.com/laravel/passport/compare/v11.8.4...v11.8.5) - 2023-04-04
+
+- Allow `lcobucci/jwt` v5 and cleaned up version constraints by @GrahamCampbell in https://github.com/laravel/passport/pull/1649
+- Pass user identifier through to finalize scopes in personal access grant by @GrahamCampbell in https://github.com/laravel/passport/pull/1650
+
+## [v11.8.4](https://github.com/laravel/passport/compare/v11.8.3...v11.8.4) - 2023-03-18
+
+- Removed deprecated `dates` property from `RefreshToken` model by @siarheipashkevich in https://github.com/laravel/passport/pull/1645
+- Removed deprecated `dates` property from `AuthCode` model by @siarheipashkevich in https://github.com/laravel/passport/pull/1644
+- Fix doc block types by @hafezdivandari in https://github.com/laravel/passport/pull/1647
+
+## [v11.8.3](https://github.com/laravel/passport/compare/v11.8.2...v11.8.3) - 2023-03-01
+
+- Allow overriding the `AccessToken` class by @hafezdivandari in https://github.com/laravel/passport/pull/1638
+- Make `$userId` nullable in `ClientRepository->createPersonalAccessClient` by @bram-pkg in https://github.com/laravel/passport/pull/1642
+
+## [v11.8.2](https://github.com/laravel/passport/compare/v11.8.1...v11.8.2) - 2023-02-20
+
+- Re-apply "Added AuthenticationException to extend the behaviour of Laravel's default exception handler" by @driesvints in https://github.com/laravel/passport/commit/67c3e336af163f6eba5dbca8e5db46275ff0e433
+
+## [v11.8.1](https://github.com/laravel/passport/compare/v11.8.0...v11.8.1) - 2023-02-20
+
+- Revert "Move AuthenticationException into the scope of Laravel Passport" by @driesvints in https://github.com/laravel/passport/commit/db543b0cc13ed3f56f1bffda04707fbe2a8c7ab5
+
+## [v11.8.0](https://github.com/laravel/passport/compare/v11.7.0...v11.8.0) - 2023-02-17
+
+- Move AuthenticationException into the scope of Laravel Passport by @chrispage1 in https://github.com/laravel/passport/pull/1633
+- Custom authorization view response by @JonErickson in https://github.com/laravel/passport/pull/1629
+- Fix deprecated $dates property by @TonyWong9527 in https://github.com/laravel/passport/pull/1636
+
+## [v11.7.0](https://github.com/laravel/passport/compare/v11.6.1...v11.7.0) - 2023-02-08
+
+### Added
+
+- Add support for `EncryptCookies` middleware by @axlon in https://github.com/laravel/passport/pull/1628
+
+## [v11.6.1](https://github.com/laravel/passport/compare/v11.6.0...v11.6.1) - 2023-02-03
+
+### Changed
+
+- Indicate current token can be `TransientToken` by @axlon in https://github.com/laravel/passport/pull/1627
+
+## [v11.6.0](https://github.com/laravel/passport/compare/v11.5.1...v11.6.0) - 2023-01-31
+
+### Changed
+
+- Update ClientCommand.php's user_id description by @Smoggert in https://github.com/laravel/passport/pull/1619
+- Get model PK instead of forcibly id column by @lucaspanik in https://github.com/laravel/passport/pull/1626
+
+### Fixed
+
+- Fix doc block for `withAccessToken()` by @axlon in https://github.com/laravel/passport/pull/1620
+
+## [v11.5.1](https://github.com/laravel/passport/compare/v11.5.0...v11.5.1) - 2023-01-16
+
+### Fixed
+
+- Get authenticated user from the guard by @hafezdivandari in https://github.com/laravel/passport/pull/1617
+
+## [v11.5.0](https://github.com/laravel/passport/compare/v11.4.0...v11.5.0) - 2023-01-09
+
+### Added
+
+- Laravel v10 Support by @driesvints in https://github.com/laravel/passport/pull/1615
+
+## [v11.4.0](https://github.com/laravel/passport/compare/v11.3.1...v11.4.0) - 2023-01-03
+
+### Changed
+
+- Uses PHP Native Type Declarations 🐘 by @nunomaduro in https://github.com/laravel/passport/pull/1594
 
 ## [v11.3.1](https://github.com/laravel/passport/compare/v11.3.0...v11.3.1) - 2022-12-02
 
